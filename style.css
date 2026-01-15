@@ -999,3 +999,56 @@ section, .hero-content {
         background: rgba(255,255,255,0.1);
     }
 }
+.dokumentasi-section {
+    padding: 80px 20px;
+    background: #111;
+    color: white;
+    text-align: center;
+}
+
+.dokumentasi-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+.dokumentasi-subtitle {
+    color: #aaa;
+    margin-bottom: 40px;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.dokumentasi-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 25px;
+    max-width: 1100px;
+    margin: auto;
+}
+
+.doc-card {
+    background: #1a1a1a;
+    border-radius: 15px;
+    overflow: hidden;
+    transition: 0.4s ease;
+    cursor: pointer;
+}
+
+.doc-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.doc-card span {
+    display: block;
+    padding: 15px;
+    font-weight: 600;
+    color: #f1f1f1;
+}
+
+.doc-card:hover {
+    transform: translateY(-10px) scale(1.03);
+    box-shadow: 0 15px 30px rgba(255, 255, 255, 0.1);
+}
